@@ -19,10 +19,19 @@ require_once("config.php");
 
 //carrega um usuario o login e a senha
 
-$usuario = new Usuario();
-$usuario->login("Julia", "252502");
+//$usuario = new Usuario();
+//$usuario->login("root","1234");
 
-echo $usuario;
+//echo $usuario;
+
+$aluno = new Usuario();
+
+$aluno->setDeslogin("aluno");
+$aluno->setDessenha("@lun0");
+
+$aluno->insert();
+
+echo $aluno;
 
 
 /*
